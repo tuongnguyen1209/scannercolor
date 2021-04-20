@@ -1,0 +1,139 @@
+.app {
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  contain: strict;
+}
+.app-page {
+  font-size: 1.4rem;
+  left: 0;
+  top: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.content {
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  contain: layout size style;
+}
+.scroll-content.noscroll {
+  overflow-y: hidden;
+}
+.scroll-content {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  contain: size style layout;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+#scanner {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.container #scanner video {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform: scale(1.4);
+}
+.overlay {
+  position: absolute;
+  top: 40%;
+  right: 20%;
+  bottom: 40%;
+  left: 20%;
+  box-shadow: 0px 0px 20px 1000px rgb(0 0 0 / 40%);
+  border: 5px solid #9ec043;
+  /* border-radius: 10px; */
+}
+
+.text-container {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+}
+.text {
+  position: relative;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+}
+.text-container h1 {
+  color: #9ec043;
+  text-align: center;
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col {
+  padding: 5px;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  min-height: 1px;
+}
+.image-container {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.btn-capture {
+  position: relative;
+  width: 95px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  display: flex;
+  cursor: pointer;
+}
+img {
+  max-width: 95px;
+}
+
+.flash {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  opacity: 0;
+}
+canvas {
+  z-index: 100;
+}
